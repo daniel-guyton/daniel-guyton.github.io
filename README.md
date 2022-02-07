@@ -1,1 +1,0 @@
-# daniel-guyton.github.io
