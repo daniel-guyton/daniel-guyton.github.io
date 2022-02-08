@@ -165,7 +165,7 @@ p {
 
 .codeexamples {
  display: grid;
- grid-template-columns: 600px 600px;;
+ grid-template-columns: 746px 746px;;
  justify-content: center;
  column-gap: 5px ;
 }
