@@ -24,6 +24,7 @@ body {
 	margin-right: auto;
 	width: 90%;
 	padding-bottom: 100px;
+	background-color: blue;
 }
 
 li, a {
@@ -82,7 +83,6 @@ h3 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 75px;
 }
 
 p {
@@ -114,6 +114,7 @@ p {
 .cardimages {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .cardimages > h1 {
