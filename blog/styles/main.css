@@ -122,6 +122,10 @@ p {
 	right: 0;
 }
 
+.blogheadings {
+	margin-bottom: 0	;
+}
+
 
 #blogcard1, #blogcard2, #blogcard3{
 	width: 100%;
@@ -136,9 +140,14 @@ p {
 }
 
 .view-blog-button {
-	padding: 10px 10px;
-	display: flex;
-	align-content: space-around;
+	padding: 10px 30px;
+	display: inline-block;
+	align-content: flex-end;
+}
+
+.cardimages > button{
+	display: inline-block;
+	align-content: flex-end;
 }
 
 #classesidtitle {
