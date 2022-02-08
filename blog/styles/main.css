@@ -164,23 +164,27 @@ p {
 }
 
 .codeexamples {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: baseline;
+ display: grid;
+ grid-template-columns: 600px 600px;;
+ justify-content: center;
+ column-gap: 5px ;
 }
 
 .codeexamples > img {
 	max-width: 600px;
 	max-height: 200px;
-	width: 100%;
-	padding: 0px 5px ;
+	width: auto;
+	justify-content: center;
+	border-radius: 15px;
 }
 
 .codeexamples > p{
 	font-size: 16px;
 	font-weight: 400;
+	justify-content: center;
 }
+
+
 
 
 
