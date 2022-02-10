@@ -218,6 +218,22 @@ p {
 	font-weight: 600;
 }
 
+#learningplan {
+	font-size: 28;
+	text-align: center;
+}
+
+.learningplanheaders {
+	text-align: center;
+}
+
+.learningplanheaders > h1 {
+	font-size: 22px;
+}
+
+.learningplanheaders > p {
+	font-size: 16px;
+}
 
 
 
