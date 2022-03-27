@@ -19,7 +19,7 @@ body {
 }
 
 .wrap {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -30,38 +30,89 @@ body {
 li, a {
 	text-decoration: none;
 	color: #3A3A3A;
+  list-style: none;
 }
 
-.navbar li{
-	display: inline-block;
-	color: #3A3A3A;
-	padding: 0 30px;
-	font-size: 24px;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  font-size: 20px;
 }
 
-#underline {
-	display: inline-block;
-  position: relative;
-  color: #3a3a3a;
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 0;
 }
 
-#underline::after {
-	content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+ color: darkgrey;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #3a3a3a;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
 }
 
-#underline:hover::after{
-	transform: scaleX(1);
-  transform-origin: bottom left;
+
+
+@media(max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    Left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #F1F1F1;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0; 
+  }
+
+  .nav-menu.active {
+    Left: 0;
+  }
 }
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -260,7 +311,6 @@ pre > span {
   color: #009900;
   margin: 25px;
 }  
-
 
 
 
